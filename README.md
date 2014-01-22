@@ -3,7 +3,7 @@
 ## WARNING (ACHTUNG BABY!)
 
 This is a fork from [Soaa-'s nested-inlines](https://github.com/Soaa-/django-nested-inlines).
-
+ __I just made [this little (dangerous?) fix in the tabular.html template](https://github.com/quijot/django-nested-inlines/commit/0b9eed87a00bfd1f26adfdf8da2d61b995900df4)__.
 
 ## Overview
 
