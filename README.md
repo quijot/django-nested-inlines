@@ -3,7 +3,10 @@
 ## WARNING (ACHTUNG BABY!)
 
 This is a fork from [Soaa-'s nested-inlines](https://github.com/Soaa-/django-nested-inlines).
- __I just made [this little (dangerous?) fix in the tabular.html template](https://github.com/quijot/django-nested-inlines/commit/0b9eed87a00bfd1f26adfdf8da2d61b995900df4)__.
+ 
+I just made:
+- [this little (dangerous?) fix in the tabular.html template](https://github.com/quijot/django-nested-inlines/commit/0b9eed87a00bfd1f26adfdf8da2d61b995900df4)
+- [this fix in stacked and tabular templates](http://stackoverflow.com/questions/19741314/multivaluedictkeyerror-in-django-admin/20246225#20246225) so as to avoid MultiValueDictKeyError and make it works with django1.6
 
 ## Overview
 
