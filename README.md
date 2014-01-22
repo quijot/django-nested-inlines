@@ -1,5 +1,10 @@
 # django-nested-inlines
 
+## WARNING (ACHTUNG BABY!)
+
+This is a fork from [Soaa-'s nested-inlines](https://github.com/Soaa-/django-nested-inlines).
+
+
 ## Overview
 
 [Django issue #9025](http://code.djangoproject.com/ticket/9025)
@@ -15,7 +20,7 @@ it!
 
 ## Installation
 
-`pip install -e git+git://github.com/Soaa-/django-nested-inlines.git#egg=django-nested-inlines`
+`pip install -e git+git://github.com/quijot/django-nested-inlines.git#egg=django-nested-inlines`
 
 ## Usage
 
@@ -45,10 +50,11 @@ magic happen.
 	
 	class MyInline(NestedStackedInline):
 		model = B
-		inlines = [MyNestedInline,]
+		inlines = [MyNestedInline]
 	
 	class MyAdmin(NestedModelAdmin):
-		pass
+		model = A
+		inlines = [MyInline]
 	
 	admin.site.register(A, MyAdmin)
 
